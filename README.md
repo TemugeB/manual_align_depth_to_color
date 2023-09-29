@@ -5,6 +5,8 @@
 
 This demo shows how to manually align depth image to color frame in the context of a Realsense camera images. If you don't have a realsense camera, the demo here will still be useful to you. You only need to determine the depth and color camera intrinsic parameters and the depth to color camera extrinsic transform.
 
+For explanation on what is going on in the demo, please check my blog post: [github.io](https://temugeb.github.io/python/librealsense/2023/09/28/depth-color-align.html)
+
 **Prerequisites**
 
 1. Before you start, plug in your Realsense camera. This demo was only test on D415, at 1280x720 resolution. May not work on non-D cameras.
