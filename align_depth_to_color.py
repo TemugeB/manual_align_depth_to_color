@@ -24,7 +24,7 @@ depth_to_color_extrinsics = pipeline.get_active_profile().get_stream(rs.stream.d
 
 
 #precalculate values needed to convert depth image to pointcloud
-def pred_XY():
+def prep_XY():
 
     #focal point and center of frame
     height = depth_intrinsics.height
@@ -135,7 +135,7 @@ def align_manual(depth, points_x, points_y):
 def main():
 
     #depth image to pointcloud conversion factors
-    points_x, points_y = pred_XY()
+    points_x, points_y = prep_XY()
 
     #this object aligns depth image to color frame using realsense methods
     align_to = rs.stream.color
